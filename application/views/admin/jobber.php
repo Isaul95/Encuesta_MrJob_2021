@@ -29,7 +29,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header bg-primary text-center">
-              <strong class="modal-title" id="exampleModalLabel">Agregar Nuevo Evento para esta fecha</strong>
+              <strong class="modal-title" id="exampleModalLabel">Todo el diseño del jobber</strong>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

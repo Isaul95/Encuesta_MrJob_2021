@@ -17,8 +17,8 @@
 
   <body>
 <br><br>
-<a href="<?php echo base_url();?>Servicios/Lista_servicios" class="btn btn-primary">Prestador G</a>
-<button type="submit" class="btn btn-primary">Cliente</button>
+<a href="<?php echo base_url();?>Servicios/Lista_Servicios_Job" class="btn btn-primary">Soy un Job</a>
+<a href="<?php echo base_url();?>Servicios/Lista_Servicios_Jober" class="btn btn-danger">Soy un Jober</a>
 
   </body>
 </html>

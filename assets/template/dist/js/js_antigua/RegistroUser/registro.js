@@ -105,7 +105,7 @@ alert("MrJob-> "+base_urlMrJob);
 // base_url + 'Registro/RegistroUsuarios/insert_registroUsuario',
   // location.href ="http://localhost/Mr_job/Mobiliario/Mobiliario";
   // Dashboard\ListaServices
-  location.href = base_urlMrJob+"Mobiliario/Mobiliario";
+  location.href = base_urlMrJob+"Agradecimientos/Gracias";
   // location.href = base_urlMrJob+"/Mobiliario/Mobiliario";
                   } else {
                       toastr["error"](data.message);

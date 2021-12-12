@@ -17,7 +17,7 @@
 
   <body>
 <br><br>
-<a href="<?php echo base_url();?>Login/Iniciar_Sesion" class="btn btn-primary">Prestador G</a>
+<a href="<?php echo base_url();?>Servicios/Lista_servicios" class="btn btn-primary">Prestador G</a>
 <button type="submit" class="btn btn-primary">Cliente</button>
 
   </body>

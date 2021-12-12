@@ -14,10 +14,6 @@ class RegistroUsuarios extends CI_Controller {
 
 
 	public function index(){
-					// $data = array(
-					// 	'permisos' => $this->permisos,
-					// 	'username' => $this->session->userdata('username'),
-					// );
 		$this->load->view('layouts/header_sin_aside');
 		// $this->load->view('layouts/header');
 		// $this->load->view('layouts/aside');
@@ -28,7 +24,7 @@ class RegistroUsuarios extends CI_Controller {
 
 
 
-	public function insert_registroUsuario(){
+	public function insert_registroUsuariovvvvvv(){
 
 			$ajax_data = $this->input->post();
 			if ($this->Modelo_RegistroUsuarios->agregar_NuevoUsuarioToMrJob($ajax_data)) {

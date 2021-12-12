@@ -36,63 +36,19 @@
 <!-- Sweet Alert2 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
-
 <script src="<?php echo base_url();?>assets/template/js/fullcalendar.min.js"></script>
 <script src="<?php echo base_url();?>assets/template/js/es.js"></script>
 <script src="<?php echo base_url();?>assets/template/clockpicker-js/bootstrap-clockpicker.js"></script>
-
-<!-- xxxxxxxxxxxx -->
-<!-- <script src="<?php echo base_url();?>assets/template/js/organictabs.jquery.js"></script> -->
-
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
 
 <script>
 
     $(document).ready(function(){
-
-//  1.-  Vista ruta     ===>>    views\admin\permisos\list.php
-        $('#tbl_permisos').DataTable( {
-            "language" : language_espaniol,
-          });
-
-//   2.- Vista ruta       ====>>>   views\admin\usuarios\list.php
-        $('#tbl_usuarios').DataTable( {
-            "language" : language_espaniol,
-          });
-
     })
-
-
-// ES EL LENGUAJE DE LAS TABLAS DE INGLES => ESPAÑOL DataTable()
-// *********   VAR PARA CAMBIAR DE IDIOMA AL ESPAÑOL EL DataTable **********
-    var language_espaniol = {
-      "lengthMenu": "Mostrar _MENU_ registros por pagina",
-      "zeroRecords": "No se encontraron resultados en su busqueda",
-      "searchPlaceholder": "Buscar Registros",
-      "info": "Total: _TOTAL_ registros",
-      "infoEmpty": "No Existen Registros",
-      "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-      "search": "Buscar:",
-      "paginate": {
-        "first": "Primero",
-        "last": "Último",
-        "next": "Siguiente",
-        "previous": "Anterior"
-      }, /* TODO ESTO ES PARA CAMBIAR DE IDIOMA */
-    }
 
     var base_url = '<?php echo base_url();?>';
 
 </script>
-
-<!--$(document).ready(function(){
-    /*  ADD LA PARTE SUPERIOR LA BUSKEDA Y LA PAGHINACION  */
-$('#btn_RegistroPago').DataTable( {
- "order": [[ 5, "asc" ]], //ordenar de forma ascendente
-});
-}) -->
-
 
 
 
@@ -104,9 +60,9 @@ $('#btn_RegistroPago').DataTable( {
 
 <!-- Registrar nuevo usuario cliente o prestador de servicio -->
 <script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/RegistroUser/registro.js"></script>
+<script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/RegistroUser/registroJober.js"></script>
 
-<script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/Dashboard/listaService.js"></script>
 
-<script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/Salones/Salones.js"></script>
-
-<script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/Mobiliario/Mobiliario.js"></script>
+<!-- ejemplos -->
+<!-- <script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/Dashboard/listaService.js"></script> -->
+<!-- <script src="<?php echo base_url();?>assets/template/dist/js/js_antigua/Salones/Salones.js"></script> -->

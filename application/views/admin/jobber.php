@@ -59,16 +59,11 @@
                   <input type="text" class="form-control" id="registro_telefono"  placeholder="Horario del evento...">
                 </div>
 
-                <div class="form-group">
-                      <button type="button" id="btn">Albañilería / construcción</button>
-                      <div class="caja" id="caja">Hola</div>
-                  </div>
-
           </form>
             </div>
             <div class="modal-footer">
               <!-- Insert Button -->
-              <button type="button" class="btn btn-primary" id="btn_registroUsuario">Registrarme</button>
+              <button type="button" class="btn btn-primary" id="btn_registroUsuario_Jober">Registrarme</button>
               <a type="button" href="<?php echo base_url();?>" class="btn btn-success">Regresar</a>
             </div>
           </div>

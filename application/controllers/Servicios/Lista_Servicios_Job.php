@@ -5,41 +5,28 @@ class Lista_Servicios_Job extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model("Usuarios_model");
+		$this->load->helper(array('form', 'url'));
+		$this->load->library(array('session', 'form_validation'));
+		// $this->permisos = $this->backend_lib->control();
+		$this->load->model("Registro_Usuarios/Modelo_RegistroUsuarios");
 	}
 
 	public function index(){
 	 $this->load->view("admin/job");
 	 $this->load->view('layouts/footer');  // tiene k llamarse el footer para hacer uso del .js
-
 	}
 
-	// public function login_user(){
-	// 	$username = $this->input->post("username");
-	// 	$password = $this->input->post("password");
-	//
-	// 	$res = $this->Usuarios_model->login($username, $password);
-	//
-	// 	if (!$res) {
-	// 		$this->session->set_flashdata("error","El usuario y/o contraseña son incorrectos");
-	// 		redirect(base_url()."Login/Iniciar_Sesion");
-	// 	}
-	// 	else{
-	// 		$data  = array(
-	// 			'ID_USER' => $res->ID_USER,
-	// 			'NOMBRES' => $res->NOMBRES,
-	// 			'ROL' => $res->ROL_ID,
-	// 			'USERNAME' => $res->USERNAME,
-	// 			'login' => TRUE
-	// 		);
-	// 		$this->session->set_userdata($data);
-	// 		redirect(base_url()."dashboard");
-	// 	}
-	// }
 
-	// public function logout(){
-	// 	$this->session->sess_destroy();
-	// 	redirect(base_url());
-	// }
+	public function insert_registroUsuario(){
+		$ajax_data = $this->input->post();
+			if ($this->Modelo_RegistroUsuarios->agregar_NuevoUsuarioJob($ajax_data)) {
+				$data = array('responce' => 'success', 'message' => 'Nuevo usuario agregado exitosamente...!');
+			} else {
+				$data = array('responce' => 'error', 'message' => 'Fallo al agregar nuevo usuario...!');
+			}
+			echo json_encode($data);
+		}
+
+
 
 }
